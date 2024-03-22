@@ -1,0 +1,125 @@
+
+
+.navBar {
+    padding: 25px;
+    margin: 25px;
+    max-height: 200px;
+    min-width:1000px;
+    border:0px; 
+}
+
+header {min-width: 1000px;
+background-color:rgb(23, 58, 161);
+width: 100%;}
+
+/* from lines  15-39 makes the nav bar move to catch the eye of the user */
+.navBarLink {
+    display:inline-flex;     
+    position:relative;    
+    z-index: 2;   
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+	background-color: rgb(102, 108, 187);   
+    /* changes color of the button */
+	margin-left: 50px;
+	margin-right: 50px;
+    /* margins move the button */
+	border-radius: 10px;
+    /* border radius smoothens the button out */
+     color: white;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     transition-duration: 0.5s;
+     text-decoration:none;
+     transition-timing-function: ease;
+     /*Transition-timing-function is a minor setting with the animation that makes the animation appear more smoother */
+     and { display:inline-flex;
+    position:relative;
+z-index: 1;
+padding-left: 40px;
+padding-right: 40px;
+padding-top: 35px;
+padding-bottom: 35px;
+background-color: rgb(42, 31, 70); }
+}
+/* this part from lines 38-59 causes the button to grow slightly larger and turn darker for to atract user*/
+.navBarLink:hover {
+    display:inline-flex;     
+    position: relative;    
+    z-index: 1;   
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+	background-color: rgb(91, 83, 158);   
+    /* changes color of the button */
+	margin-left: 50px;
+	margin-right: 50px;
+    /* margins move the button */
+	border-radius: 10px;
+    /* border radius smoothens the button out */
+     color: white;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     transition-duration: 0.5s;
+     text-decoration:underline;
+     transition-timing-function: ease;
+     
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("images/foodtruck.jpg");
+  
+    /* min-height changed how long the "bar" would be */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    /* background-size changes how big it appears on screen*/
+     
+  }
+
+  h1{
+    font-size: 40px;
+    text-align: left;
+    display:block;
+    /* as a side     note this is just for the "table" in the top of the screen.*/
+    font:Impact;
+}
+
+html {background-color:rgb(180, 225, 255);}
+
+h1,p {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+p{font-size: 30px;}
+/* from tlines 83-105 is another example of text growing if it is highlighted by the user. This is used for readibility. */
+.highlight{
+    font-size:150%;
+    /*transition-duration is how long it takes to go from the start of the animation (being the text growing) to the end */
+    transition-duration: 0.5s;
+    
+}
+
+.highlight:hover{
+    font-size:225%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.highlight_imp{
+    font-size:350%;
+    transition-duration: 0.5s;
+    
+}
+
+.highlight_imp:hover{
+    font-size:425%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+    
